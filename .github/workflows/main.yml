@@ -35,7 +35,7 @@ jobs:
     - name: Run Automate Script
       run: |
         cd preprocessing
-        python automate_Budi.py
+        python automate_Muhammad-Virgi-Zulfahmi.py
 
     # Commit dan Push Hasil
     - name: Commit and Push Processed Data
@@ -45,7 +45,7 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         
         # Tambahkan file hasil proses
-        git add preprocessing/student_placement_clean.csv
+        git add preprocessing/college_student_placement_dataset_preprocessing.csv
         
         # Cek status, jika ada perubahan baru di-commit
         # "|| echo..." mencegah error jika tidak ada perubahan data
